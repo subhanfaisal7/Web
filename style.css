@@ -133,33 +133,41 @@ html, body {
   transform: scale(1.2);
 }
 
-/* Responsive styles */
+/* Responsive styles
 @media (max-width: 768px) {
   #contact-menu {
-    padding-top: 120px;
+    padding-top: 100px; /* Reduced from 120px */
+    justify-content: center; /* Center content vertically */
   }
   
   #contact-blur-runner {
-    width: 200px;
-    bottom: 120px;
-    left: 40px;
+    width: 180px; /* Slightly larger */
+    bottom: 100px;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Perfect centering */
   }
   
   #contact-content {
-    padding: 20px;
+    padding: 15px 20px; /* More balanced padding */
+    width: 95%; /* Slightly wider */
+    margin: 0 auto; /* Center the box */
   }
   
   #contact-content h2 {
     font-size: 1.2rem;
+    margin-bottom: 15px; /* Consistent spacing */
   }
   
   .contact-item {
     font-size: 0.9rem;
     flex-direction: column;
+    align-items: center; /* Center-align items */
+    margin-bottom: 12px; /* Consistent spacing */
   }
   
   .social-icons {
-    gap: 20px;
+    gap: 15px; /* Slightly tighter */
+    justify-content: center; /* Center icons */
   }
   
   .social-icons a {
@@ -170,24 +178,35 @@ html, body {
 @media (max-width: 480px) {
   #contact-menu {
     padding-top: 80px;
+    padding-bottom: 20px; /* Add bottom padding */
   }
   
   #contact-blur-runner {
     width: 150px;
     bottom: 80px;
-    left: 20px;
+  }
+  
+  #contact-content {
+    padding: 15px; /* More compact */
   }
   
   #contact-content h2 {
     font-size: 1rem;
+    line-height: 1.3; /* Better text flow */
   }
   
   .social-section h3 {
     font-size: 0.9rem;
+    margin-bottom: 10px; /* Tighter spacing */
+  }
+  
+  .social-icons {
+    gap: 12px; /* Even tighter on small phones */
   }
   
   .social-icons a {
     font-size: 1.5rem;
+    padding: 5px; /* Larger tap target */
   }
 }
 
@@ -1070,4 +1089,35 @@ html, body {
   input, select, textarea {
     font-size: 16px !important;
   }
+  /* ===== MOBILE ABOUT ME (ADDED FRESH 2025-06-23) ===== */
+@media (max-width: 768px) {
+  #about-me-container {
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 20px !important;
+    margin-top: 80px !important;
+  }
+
+  .info-section, .coding-languages {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .info-item {
+    margin: 10px 0 !important;
+    font-size: 14px !important;
+  }
+
+  .coding-languages {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px !important;
+    margin-top: 20px !important;
+  }
+
+  .info-text, .language-item {
+    word-break: keep-all !important;
+    white-space: nowrap !important;
+  }
+}
 }
