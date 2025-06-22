@@ -1178,4 +1178,8 @@ html, body {
     margin: 0 8px;
     display: inline-block;
   }
+  /* Hide menu when score is visible */
+#score:not(:empty) ~ #pixel-menu {
+  display: none !important;
+}
 }
