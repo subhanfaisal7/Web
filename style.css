@@ -1191,35 +1191,5 @@ html, body {
     width: 30px;
     height: 30px;
   }
-  /* ===== CONTACT BOX FIX ===== */
-#contact-content {
-  all: initial !important;
-  display: block !important;
-  position: relative !important;
-  z-index: 9999 !important;
-  width: 300px;
-  margin: 20px;
-  padding: 15px;
-  background: white;
-  border: 1px solid black;
-  font-family: monospace;
-  color: black !important;
-}
-
-#contact-content * {
-  all: initial !important;
-  font-family: monospace !important;
-  color: black !important;
-}
-
-.contact-form input, 
-.contact-form textarea,
-.contact-form button {
-  display: block !important;
-  width: 100% !important;
-  margin: 8px 0 !important;
-  padding: 5px !important;
-  border: 1px solid black !important;
-  background: white !important;
-}
+  
 }
