@@ -1138,5 +1138,36 @@ html, body {
     right: auto !important;
     transform: none !important;
   }
-}
+/* ===== GAME INSTRUCTIONS MOBILE FIX ===== */
+@media (max-width: 768px) {
+  #instructions {
+    text-align: center;
+    padding: 15px;
+    line-height: 1.5;
+  }
+
+  #instructions h1 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  #instructions ul {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  #instructions li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #instructions li img {
+    width: 30px;
+    height: 30px;
+    margin: 0 8px;
+    display: inline-block;
+  }
 }
