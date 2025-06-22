@@ -1178,6 +1178,20 @@ html, body {
     margin: 0 8px;
     display: inline-block;
   }
+  /* Mobile-friendly instruction alignment */
+@media (max-width: 768px) {
+  #instructions li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  #instructions li img {
+    margin-right: 8px;
+    width: 30px;
+    height: 30px;
+  }
+}
   /* Hide menu when score is visible */
 #score:not(:empty) ~ #pixel-menu {
   display: none !important;
