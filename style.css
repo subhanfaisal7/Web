@@ -1192,8 +1192,3 @@ html, body {
     height: 30px;
   }
 }
-  /* Hide menu when score is visible */
-#score:not(:empty) ~ #pixel-menu {
-  display: none !important;
-}
-}
