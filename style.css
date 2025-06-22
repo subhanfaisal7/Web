@@ -1100,5 +1100,43 @@ html, body {
     word-break: keep-all !important;
     white-space: nowrap !important;
   }
+/* Fix text overflow and layout */
+@media (max-width: 768px) {
+  /* For About Me section */
+  #about-me-container {
+    overflow: visible !important;
+    padding: 15px !important;
+  }
+  
+  .info-item {
+    white-space: normal !important;
+    word-break: break-word !important;
+  }
+  
+  /* Ensure "Computer Science" shows completely */
+  .info-item:nth-child(4) { /* Targets Degree line */
+    white-space: normal !important;
+  }
+
+  /* For Game Instructions */
+  #instructions {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
+  
+  #instructions li {
+    white-space: normal !important;
+    text-align: left !important;
+  }
+  /* Move character to bottom in About Me */
+@media (max-width: 768px) {
+  #about-me-runner {
+    position: relative !important;
+    margin: 30px auto 0 auto !important;
+    width: 150px !important;
+    top: auto !important;
+    right: auto !important;
+    transform: none !important;
+  }
 }
 }
