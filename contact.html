@@ -36,26 +36,22 @@
     <div id="fly"></div>
   </div>
 
-  <!-- Contact Content - Using same style as main menu -->
-  <div id="contact-menu" class="visible">
-    <div id="contact-blur-runner">
-      <img src="media/runner.gif" alt="Running character blurred" />
-    </div>
-    
-<div id="contact-content">
-  <h2>GET IN TOUCH</h2>
+<div id="contact-content" style="width: 90%; max-width: 600px; margin: 0 auto; padding: 20px; text-align: left; font-family: monospace; line-height: 1.6;">
+  
+  <!-- Title -->
+  <h2 style="margin-bottom: 20px;">GET IN TOUCH</h2>
   
   <!-- Social Section -->
-  <div class="social-section">
-    <h3>FIND ME ON:</h3>
-    <div class="social-icons">
-      <a href="https://www.facebook.com/share/1AbWtmwfsa/?mibextid=wwXIfr" target="_blank">
+  <div class="social-section" style="margin-bottom: 30px;">
+    <h3 style="margin-bottom: 10px;">FIND ME ON:</h3>
+    <div class="social-icons" style="font-size: 24px;">
+      <a href="https://www.facebook.com/share/1AbWtmwfsa/?mibextid=wwXIfr" target="_blank" style="margin-right: 15px;">
         <i class="fab fa-facebook-square"></i>
       </a>
-      <a href="mailto:mha9507@nyu.edu" target="_blank">
+      <a href="mailto:mha9507@nyu.edu" target="_blank" style="margin-right: 15px;">
         <i class="fas fa-envelope"></i>
       </a>
-      <a href="https://www.instagram.com/mhz_398/" target="_blank">
+      <a href="https://www.instagram.com/mhz_398/" target="_blank" style="margin-right: 15px;">
         <i class="fab fa-instagram"></i>
       </a>
       <a href="https://github.com/mha9507" target="_blank">
@@ -64,22 +60,23 @@
     </div>
   </div>
 
-  <!-- Divider WITH proper spacing -->
-  <div class="divider" style="margin: 30px 0;"></div>
-
-
-
-<form action="https://formspree.io/f/mnnvgapr" method="POST" class="contact-form">
-  <h3>SEND ME A MESSAGE</h3>
-  <input type="text" name="name" placeholder="Your Name" class="pixel-input" required>
-  <input type="email" name="_replyto" placeholder="Your Email" class="pixel-input" required>
-  <textarea name="message" placeholder="Your Message" class="pixel-textarea" required></textarea>
-  
-  <!-- Hidden fields for better organization -->
-  <input type="hidden" name="_subject" value="New message from your website!">
-  <input type="hidden" name="_format" value="plain">
-  
-  <button type="submit" class="pixel-button">SEND <i class="fas fa-paper-plane"></i></button>
+  <!-- Form Section -->
+  <form action="https://formspree.io/f/mnnvgapr" method="POST" style="margin-top: 30px;">
+    <h3 style="margin-bottom: 15px;">SEND ME A MESSAGE</h3>
+    
+    <input type="text" name="name" placeholder="Your Name" 
+           style="display: block; width: 100%; margin-bottom: 15px; padding: 10px; font-family: monospace;">
+    
+    <input type="email" name="_replyto" placeholder="Your Email" 
+           style="display: block; width: 100%; margin-bottom: 15px; padding: 10px; font-family: monospace;">
+    
+    <textarea name="message" placeholder="Your Message" 
+              style="display: block; width: 100%; margin-bottom: 15px; padding: 10px; height: 100px; font-family: monospace;"></textarea>
+    
+    <button type="submit" 
+            style="background: none; border: 1px solid #000; padding: 10px 20px; font-family: monospace; cursor: pointer;">
+      SEND
+    </button>
   
   <!-- Success/Error messages (will appear after submit) -->
   <div class="form-alert" style="display:none; margin-top:20px; padding:10px; border-radius:8px;"></div>
