@@ -453,6 +453,10 @@ document.addEventListener('DOMContentLoaded', function() {
     if (prompt) {
       prompt.style.opacity = '0';
       prompt.style.display = 'block';
+      prompt.style.position = 'absolute';
+      prompt.style.bottom = '10px';
+      prompt.style.left = '50%';
+      prompt.style.transform = 'translateX(-50%)
     }
   });
 
