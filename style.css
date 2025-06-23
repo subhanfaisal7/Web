@@ -1132,11 +1132,11 @@ html, body {
 @media (max-width: 768px) {
   #about-me-runner {
     position: fixed !important; /* Override everything */
-    bottom: 20px !important;
+    top: 50% !important;
     left: 50% !important;
-    transform: translateX(-50%) !important;
-    width: 120px !important;
-    z-index: 100 !important;
+    transform: translateX(-50%, 50%) !important;
+    width: 90% !important;
+    z-index: 10000 !important;
     margin: 0 !important;
     top: auto !important;
     right: auto !important;
