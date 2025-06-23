@@ -233,7 +233,7 @@ html, body {
 /* Runner and Objects */
 #runner {
   position: absolute;
-  bottom: 180px;
+  bottom: 0px;
   left: 80px;
   width: 350px;
   z-index: 10;
