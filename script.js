@@ -452,7 +452,7 @@ document.addEventListener('DOMContentLoaded', function() {
   prompts.forEach(prompt => {
     if (prompt) {
       prompt.style.opacity = '0';
-      prompt.style.display = 'block';
+      prompt.style.display = 'block'; !important
     }
   });
 
