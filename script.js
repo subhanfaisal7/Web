@@ -40,8 +40,8 @@ let objectX = window.innerWidth;
 const baseObjectSpeed = 5;
 let objectSpeed = baseObjectSpeed;
 const positions = [];
-// Generate positions from 180px (above runner) to near top of screen (500px)
-for (let i = 180; i <= 500; i += 30) {
+// Generate positions from 120px (above runner) to near top of screen (500px)
+for (let i = 120; i <= 500; i += 30) {
   positions.push(i);
 }
 
